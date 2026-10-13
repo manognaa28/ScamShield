@@ -85,6 +85,11 @@ npm run dev
 
 Open the local URL displayed by Vite.
 
+<img width="1883" height="896" alt="image" src="https://github.com/user-attachments/assets/ada23429-c63b-4986-ac42-79397bfc74fa" />
+<img width="1888" height="908" alt="image" src="https://github.com/user-attachments/assets/461c0fda-aee6-4d24-b151-ebb2da571b94" />
+<img width="1918" height="926" alt="image" src="https://github.com/user-attachments/assets/8ed02341-5566-44bc-aab3-7c134a9a91dc" />
+<img width="1917" height="902" alt="image" src="https://github.com/user-attachments/assets/2e44e792-82f4-47c0-9ca9-a763f673c7e0" />
+
 ## Notes
 
 - The model's score is not a calibrated probability of fraud.
