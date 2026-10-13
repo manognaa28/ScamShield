@@ -1,0 +1,116 @@
+{
+  "source_file": "DataSet.csv",
+  "dataset_totals": {
+    "total_postings": 17880,
+    "legitimate_postings": 17014,
+    "fraudulent_postings": 866,
+    "fraud_rate": 0.04843400447427293
+  },
+  "fraud_rate_by_company_logo": [
+    {
+      "company_logo": "no_logo",
+      "postings": 3660,
+      "fraudulent_postings": 583,
+      "fraud_rate": 0.1592896174863388
+    },
+    {
+      "company_logo": "has_logo",
+      "postings": 14220,
+      "fraudulent_postings": 283,
+      "fraud_rate": 0.01990154711673699
+    }
+  ],
+  "fraud_rate_by_company_profile": [
+    {
+      "company_profile": "missing_company_profile",
+      "postings": 3308,
+      "fraudulent_postings": 587,
+      "fraud_rate": 0.17744860943168078
+    },
+    {
+      "company_profile": "has_company_profile",
+      "postings": 14572,
+      "fraudulent_postings": 279,
+      "fraud_rate": 0.01914630798792204
+    }
+  ],
+  "fraud_rate_by_employment_type": [
+    {
+      "employment_type": "Full-time",
+      "postings": 11620,
+      "fraudulent_postings": 490,
+      "fraud_rate": 0.04216867469879518
+    },
+    {
+      "employment_type": "Unknown",
+      "postings": 3471,
+      "fraudulent_postings": 241,
+      "fraud_rate": 0.06943244021895707
+    },
+    {
+      "employment_type": "Contract",
+      "postings": 1524,
+      "fraudulent_postings": 44,
+      "fraud_rate": 0.028871391076115485
+    },
+    {
+      "employment_type": "Part-time",
+      "postings": 797,
+      "fraudulent_postings": 74,
+      "fraud_rate": 0.09284818067754078
+    },
+    {
+      "employment_type": "Temporary",
+      "postings": 241,
+      "fraudulent_postings": 2,
+      "fraud_rate": 0.008298755186721992
+    },
+    {
+      "employment_type": "Other",
+      "postings": 227,
+      "fraudulent_postings": 15,
+      "fraud_rate": 0.06607929515418502
+    }
+  ],
+  "description_length_by_fraud_label": {
+    "legitimate": {
+      "count": 17014,
+      "mean": 1438.6733866227812,
+      "median": 1166.0,
+      "min": 42,
+      "max": 55130
+    },
+    "fraudulent": {
+      "count": 866,
+      "mean": 1436.4030023094688,
+      "median": 975.5,
+      "min": 10,
+      "max": 29424
+    }
+  },
+  "in_balanced_dataset_crosstab": {
+    "purpose": "Data-quality documentation only. in_balanced_dataset is not a predictive feature and must not be used for training.",
+    "counts": [
+      {
+        "in_balanced_dataset": "f",
+        "fraudulent": "f",
+        "postings": 16564
+      },
+      {
+        "in_balanced_dataset": "f",
+        "fraudulent": "t",
+        "postings": 416
+      },
+      {
+        "in_balanced_dataset": "t",
+        "fraudulent": "f",
+        "postings": 450
+      },
+      {
+        "in_balanced_dataset": "t",
+        "fraudulent": "t",
+        "postings": 450
+      }
+    ]
+  }
+}

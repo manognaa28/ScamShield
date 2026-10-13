@@ -1,0 +1,74 @@
+{
+  "model": {
+    "type": "sklearn Pipeline",
+    "steps": [
+      "TfidfVectorizer",
+      "LogisticRegression"
+    ],
+    "class_weight": "balanced",
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratified": true,
+    "text_columns": [
+      "title",
+      "company_profile",
+      "description",
+      "requirements",
+      "benefits"
+    ],
+    "excluded_columns": [
+      "in_balanced_dataset"
+    ]
+  },
+  "dataset": {
+    "source_file": "DataSet.csv",
+    "row_count": 17880,
+    "label_counts": {
+      "legitimate": 17014,
+      "fraudulent": 866,
+      "total": 17880
+    }
+  },
+  "split": {
+    "train_row_count": 14304,
+    "test_row_count": 3576,
+    "train_label_counts": {
+      "legitimate": 13611,
+      "fraudulent": 693,
+      "total": 14304
+    },
+    "test_label_counts": {
+      "legitimate": 3403,
+      "fraudulent": 173,
+      "total": 3576
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.9723154362416108,
+    "fraudulent_precision": 0.6581196581196581,
+    "fraudulent_recall": 0.8901734104046243,
+    "fraudulent_f1": 0.7567567567567568,
+    "average_precision": 0.8960532943104742,
+    "confusion_matrix": {
+      "labels": [
+        0,
+        1
+      ],
+      "true_negative": 3323,
+      "false_positive": 80,
+      "false_negative": 19,
+      "true_positive": 154,
+      "matrix": [
+        [
+          3323,
+          80
+        ],
+        [
+          19,
+          154
+        ]
+      ]
+    }
+  },
+  "disclaimer": "These scores are estimates from a held-out portion of historical EMSCAD job ads. They are not a guarantee that a new posting is or is not fraudulent."
+}
